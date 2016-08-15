@@ -18,12 +18,10 @@ const dados = {
 };
 
 export default class App extends React.Component {
-	render(){
+	render(){ //{...} called SpreadOperator
 		return (
 			<div>
-				<PlacarContainer partida={dados.partida}
-								 casa={dados.casa}
-							 	 visitante={dados.visitante} />
+				<PlacarContainer {...dados}/>
 			</div>				
 		);
 	}
