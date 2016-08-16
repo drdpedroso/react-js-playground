@@ -21,7 +21,7 @@ export default class App extends React.Component {
 	render(){ //{...} called SpreadOperator
 		return (
 			<div>
-				<PlacarContainer {...dados}/>
+				<PlacarContainer {...dados} tempo={92}/>
 			</div>				
 		);
 	}
